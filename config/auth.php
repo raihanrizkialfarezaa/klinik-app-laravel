@@ -40,6 +40,7 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+<<<<<<< HEAD
         'pasien-api' => [
             'driver' => 'jwt',
             'provider' => 'pasiens',
@@ -52,6 +53,8 @@ return [
             'driver' => 'jwt',
             'provider' => 'dokters',
         ],
+=======
+>>>>>>> 95630ebdcd8400e454fbda54ae93315ce603d1b4
     ],
 
     /*
@@ -76,6 +79,7 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+<<<<<<< HEAD
         'pasiens' => [
             'driver' => 'eloquent',
             'model' => App\Models\Pasien::class,
@@ -88,6 +92,8 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\Dokter::class,
         ],
+=======
+>>>>>>> 95630ebdcd8400e454fbda54ae93315ce603d1b4
 
         // 'users' => [
         //     'driver' => 'database',

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+<<<<<<< HEAD
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
@@ -28,6 +29,13 @@ class Admin extends Authenticatable implements JWTSubject
     {
         return [];
     }
+=======
+use Illuminate\Database\Eloquent\Model;
+
+class Admin extends Model
+{
+    use HasFactory;
+>>>>>>> 95630ebdcd8400e454fbda54ae93315ce603d1b4
 
     protected $table = 'admin';
     
