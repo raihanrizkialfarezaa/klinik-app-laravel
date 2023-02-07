@@ -1,11 +1,8 @@
 <?php
 
-<<<<<<< HEAD
 use App\Http\Controllers\API\AdminController;
 use App\Http\Controllers\API\DokterController;
 use App\Http\Controllers\API\PasienController;
-=======
->>>>>>> 95630ebdcd8400e454fbda54ae93315ce603d1b4
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,7 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-<<<<<<< HEAD
 Route::controller(AdminController::class)->group(function () {
     Route::post('login-admin', 'loginAdmin');
     Route::post('regist-admin', 'registAdmin');
@@ -44,7 +40,3 @@ Route::controller(DokterController::class)->group(function () {
     Route::post('refresh-dokter', 'refresh');
     Route::post('logout-dokter', 'logout');
 });
-=======
-Route::post('/registadmin', [UserController::class, 'registAdmin']);
-Route::post('/loginadmin', [UserController::class, 'loginAdmin']);
->>>>>>> 95630ebdcd8400e454fbda54ae93315ce603d1b4

@@ -79,6 +79,13 @@ class PasienController extends Controller
         
     }
 
+    public function me()
+    {
+        $data = Auth::guard('pasien-api')->user();
+
+        return response()->json(['data' => $data]);
+    }
+
     public function logout()
     {
         auth()->guard('pasien-api')->logout();
