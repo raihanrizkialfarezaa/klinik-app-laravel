@@ -28,12 +28,12 @@ Route::controller(AdminController::class)->group(function () {
     Route::post('refresh-admin', 'refresh');
     Route::post('logout-admin', 'logout');
 });
-Route::controller(PasienController::class)->group(function () {
-    Route::post('login-pasien', 'loginPasien');
-    Route::post('regist-pasien', 'registPasien');
-    Route::post('refresh-pasien', 'refresh');
-    Route::post('logout-pasien', 'logout');
-});
+// Route::controller(PasienController::class)->group(function () {
+//     Route::post('login-pasien', 'loginPasien');
+//     Route::post('regist-pasien', 'registPasien');
+//     Route::post('refresh-pasien', 'refresh');
+//     Route::post('logout-pasien', 'logout');
+// });
 Route::controller(DokterController::class)->group(function () {
     Route::post('login-dokter', 'loginDokter');
     Route::post('regist-dokter', 'registDokter');
