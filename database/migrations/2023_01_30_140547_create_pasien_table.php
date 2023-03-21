@@ -15,9 +15,7 @@ return new class extends Migration
     {
         Schema::create('pasien', function (Blueprint $table) {
             $table->bigIncrements('id_pasien');
-            $table->string('username')->unique();
-            $table->string('password');
-            $table->string('nama_pasien');
+            $table->string('nama_pasien')->unique();
             $table->string('alamat');
             $table->string('no_telp');
             $table->timestamps();
